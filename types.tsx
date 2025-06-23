@@ -1,0 +1,30 @@
+export type RootStackParamList = {
+    Home: undefined;
+    Hyderabad: undefined;
+    Telangana: undefined;
+    India: undefined;
+    World: undefined;
+    Business: undefined;
+    Health: undefined;
+    Politics: undefined;
+    Others: undefined;
+    Film: undefined;
+    Paper: undefined;
+    AddNews: undefined;
+    AddPaper: undefined;
+    ApproveNews: undefined;
+    Login: undefined;
+    SignUp: undefined;
+    Settings: undefined;
+    Sports: undefined;
+    NewsDetails: { newsId: string; language: string };
+    Trending: undefined;
+    Papers: undefined;
+    Header: undefined;
+    Header2: undefined;
+    ManageEmployees:undefined;
+    ManageUsers:undefined;
+    RegisterEmployees:undefined;
+    Category: { category: string };
+    TermsAndConditions: undefined; //
+  };

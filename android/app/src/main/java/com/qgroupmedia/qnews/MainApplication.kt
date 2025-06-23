@@ -1,4 +1,4 @@
-package com.qnewsofficial
+package com.qgroupmedia.qnews
 
 import android.app.Application
 import com.facebook.react.PackageList

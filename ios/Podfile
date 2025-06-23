@@ -33,3 +33,6 @@ target 'QNewsOfficial' do
     )
   end
 end
+target 'OneSignalNotificationServiceExtension' do
+  pod 'OneSignalXCFramework', '>= 5.0.0', '< 6.0'
+end

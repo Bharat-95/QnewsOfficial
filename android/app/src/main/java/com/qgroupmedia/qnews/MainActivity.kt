@@ -1,4 +1,4 @@
-package com.qnewsofficial
+package com.qgroupmedia.qnews
 
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate

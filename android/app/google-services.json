@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "869938126359",
+    "project_id": "qnews-9fecb",
+    "storage_bucket": "qnews-9fecb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:869938126359:android:d95fb2660399186bd04652",
+        "android_client_info": {
+          "package_name": "com.qgroupmedia.qnews"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVO5WJAJ9gkzSXT23i_lAOsldVFETmbxc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
