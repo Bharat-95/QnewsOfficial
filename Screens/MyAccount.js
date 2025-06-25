@@ -42,6 +42,38 @@ const MyAccount = () => {
     checkLogin();
   }, []);
 
+  const handleDeleteAccount = async () => {
+  try {
+    const email = await AsyncStorage.getItem('email');
+    if (!email) {
+      alert('No user found');
+      return;
+    }
+
+    const response = await fetch(
+      `https://3jvmmmwqx6.execute-api.ap-south-1.amazonaws.com/users/${email}`,
+      {
+        method: 'DELETE',
+      }
+    );
+
+    const result = await response.json();
+    if (result.success) {
+      alert('Account deleted successfully');
+
+      // Clear all user data and navigate to Home
+      await AsyncStorage.clear();
+      setIsLoggedIn(false);
+      navigation.navigate('Home');
+    } else {
+      alert('Failed to delete account');
+    }
+  } catch (error) {
+    console.error('Error deleting account:', error);
+    alert('Error deleting account');
+  }
+};
+
   
   const categories = [
     {label: translations.telangana, icon: 'flag', route: 'Home'},
@@ -110,6 +142,14 @@ const MyAccount = () => {
     <Text style={styles.menuText}>Terms & Conditions</Text>
   </View>
 </TouchableOpacity>
+
+<TouchableOpacity style={styles.menuItem} onPress={handleDeleteAccount}>
+  <View style={styles.menuRow}>
+    <Icon2 name="trash-outline" size={24} color="#E2670A" />
+    <Text style={styles.menuText}>Delete My Account</Text>
+  </View>
+</TouchableOpacity>
+
 
 <TouchableOpacity style={styles.menuItem} onPress={handleLogout}>
   <View style={styles.menuRow}>

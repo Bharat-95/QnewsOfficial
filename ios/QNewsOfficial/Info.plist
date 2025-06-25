@@ -4,6 +4,15 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
+	<key>GADApplicationIdentifier</key>
+<string>ca-app-pub-5147970592590624~5613365237</string>
+<key>NSPhotoLibraryUsageDescription</key>
+<string>This app needs access to your photo library to allow users to upload or view images.</string>
+<key>NSMicrophoneUsageDescription</key>
+<string>This app may need access to your microphone for audio features.</string>
+
+
+
 	<key>CFBundleDisplayName</key>
 	<string>QNewsOfficial</string>
 	<key>CFBundleExecutable</key>
@@ -45,7 +54,7 @@
 		<true/>
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<string>This app uses your location to show nearby news and improve experience.</string>
 	<key>NSUserNotificationsUsageDescription</key>
 	<string>QNewsOfficial needs your permission to send you news updates and notifications.</string>
 	<key>OneSignalAppId</key>
